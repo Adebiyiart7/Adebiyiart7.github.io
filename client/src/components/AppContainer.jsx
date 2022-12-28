@@ -120,7 +120,14 @@ const AppContainer = ({ mediaQueries }) => {
             <p style={styles.hireMeText}>
               Your business deserves a professional website.
             </p>
-            <AppButton text={"Hire Me Now"} />
+            <div
+              className="wow fadeInUp"
+              data-wow-delay="0ms"
+              data-wow-duration="1000ms"
+              data-wow-iteration="2"
+            >
+              <AppButton text={"Download CV"} />
+            </div>
           </div>
         </section>
         <WavyBottom />
