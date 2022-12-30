@@ -16,7 +16,7 @@ const sendEmail = async (data) => {
       process.env.REACT_APP_API_URI + "/api/mailer",
       data
     );
-    
+
     return response.data;
   } catch (error) {
     console.log(error);
@@ -69,31 +69,34 @@ const ContactMe = ({ mediaQueries }) => {
       />
       <PageTitle title={"Contact Me"} titleStyles={styles.titleStyles} />
       <p style={styles.intro}>Let's take your business to the next level.</p>
-      <div style={styles.body}>
-        <div style={styles.right}>
-          <header className={classes.header}>Address</header>
-          <div style={styles.contactInfo}>
-            <p>
-              <FaHome size={24} color="var(--primaryColor)" />
-              &nbsp;&nbsp;Federal University of Technology,
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minna Niger State.
-            </p>
-            <p>
-              <FaPhoneAlt size={24} color="var(--primaryColor)" />
-              &nbsp;&nbsp;09029242729
-            </p>
-            <p>
-              <FaWhatsappSquare size={24} color="var(--primaryColor)" />
-              &nbsp;&nbsp;09029242729
-            </p>
-            <p>
-              <MdEmail size={24} color="var(--primaryColor)" />
-              &nbsp;&nbsp;adebiyiartworld@gmail.com
-            </p>
-          </div>
+      {/* <div style={styles.body}> */}
+      <div
+        style={styles.right}
+        className="wow fadeInDown"
+        data-wow-delay="0ms"
+        data-wow-duration="1000ms"
+      >
+        {/* <header className={classes.header}>Address</header> */}
+        <div style={styles.contactInfo}>
+          <p>
+            <FaHome size={24} color="var(--primaryColor)" />
+            &nbsp;&nbsp;Federal University of Technology, Minna Niger State.
+          </p>
+          <p>
+            <FaPhoneAlt size={24} color="var(--primaryColor)" />
+            &nbsp;&nbsp;09029242729
+          </p>
+          <p>
+            <FaWhatsappSquare size={24} color="var(--primaryColor)" />
+            &nbsp;&nbsp;09029242729
+          </p>
+          <p>
+            <MdEmail size={24} color="var(--primaryColor)" />
+            &nbsp;&nbsp;adebiyiartworld@gmail.com
+          </p>
         </div>
-        <form style={styles.right} onSubmit={handleSubmit}>
+      </div>
+      {/* <form style={styles.right} onSubmit={handleSubmit}>
           <header className={classes.header}>Message</header>
           <div className={classes.formField}>
             <TextField
@@ -168,8 +171,8 @@ const ContactMe = ({ mediaQueries }) => {
             type="submit"
             customStyles={{ ...styles.buttonStyles, width: "100%" }}
           />
-        </form>
-      </div>
+        </form> */}
+      {/* </div> */}
     </div>
   );
 };
