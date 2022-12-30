@@ -30,7 +30,7 @@ export const styles = (mediaQueries) => {
     right: {
       flex: 0.7,
       width: "100%",
-      maxWidth: 400,
+      maxWidth: 600,
       margin: "auto",
     },
     titleStyles: {
