@@ -9,18 +9,18 @@ const useStyles = makeStyles({
   body: {
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    alignItems: "center"
   },
   description: {
     color: "var(--primaryText)",
     fontFamily: "var(--appFontFamily)",
-    lineHeight: 1.6,
+    lineHeight: 1.6
   },
   photo: {
     width: "100%",
     maxWidth: 370,
-    borderRadius: "50%",
-  },
+    borderRadius: "50%"
+  }
 });
 
 const About = ({ mediaQueries }) => {
@@ -30,58 +30,86 @@ const About = ({ mediaQueries }) => {
   const styles = {
     skills: {
       display: tablet ? "initial" : "flex",
-      width: "100%",
+      width: "100%"
     },
     skillsLeft: {
-      width: tablet ? "100%" : "50%",
+      width: tablet ? "100%" : "50%"
     },
     skillRight: {
-      width: tablet ? "100%" : "50%",
-    },
+      width: tablet ? "100%" : "50%"
+    }
   };
 
   return (
     <div>
       <PageTitle mediaQueries={mediaQueries} title={"Who am I"} />
       <div className={classes.body}>
-        {tabletUp && <img className={classes.photo} src={photo} alt="" />}
-        <div className={classes.description}>
-          <strong>
-            I am a Full Stack Web Developer, having over 3 years of experience
-            in building web applications for small and medium sized businesses.
-          </strong>
+        {tabletUp && (
+          <img
+            className={`${classes.photo} wow fadeInLeft`}
+            src={photo}
+            alt=""
+            data-wow-delay="0ms"
+            data-wow-duration="1000ms"
+          />
+        )}
+        <div
+          className={`${classes.description} wow fadeInRight`}
+          data-wow-delay="0ms"
+          data-wow-duration="1000ms"
+        >
+          I am a <strong>Software Developer</strong> with 4 years of experience
+          in developing robust and scalable applications (web and mobile) for
+          various industries. I specialize in JavaScript programming language
+          and have interest in Python and Java, and a strong background in
+          software architecture, database design, and agile development
+          methodologies.
           <br />
           <br />I have so much interest in developing web applications with high
           degree of excellence. I love writing <strong>clean codes</strong>,
           creating
           <strong> beautiful</strong> user interfaces, building{" "}
           <strong>secure </strong>
-          applications and converting my client's ideas into reality.
+          applications and converting ideas into reality.
           <br />
           <br />
           <br />
           <div style={{ textAlign: tablet ? "center" : "initial" }}>
-            <AppButton text="Hire Me Now" />
+            <AppButton text="Download CV" />
           </div>
         </div>
       </div>
-
+      <br />
+      <br />
+      <h3 style={{ textAlign: "center", color: "var(--primaryText)", fontWeight: "700", fontSize: 24 }}>My Tech Stack</h3>
       <div style={styles.skills}>
-        <div style={styles.skillsLeft}>
+        <div
+          style={styles.skillsLeft}
+          className={"wow fadeInLeft"}
+          data-wow-delay="300ms"
+          data-wow-duration="1500ms"
+        >
           <Skill mediaQueries={mediaQueries} text="HTML & CSS" value={90} />
           <Skill mediaQueries={mediaQueries} text="JavaScript" value={85} />
           <Skill mediaQueries={mediaQueries} text="TypeScript" value={70} />
           <Skill mediaQueries={mediaQueries} text="React & Redux" value={85} />
+          <Skill mediaQueries={mediaQueries} text="Python" value={50} />
         </div>
-        <div style={styles.skillRight}>
+        <div
+          style={styles.skillRight}
+          className="wow fadeInRight"
+          data-wow-delay="300ms"
+          data-wow-duration="1500ms"
+        >
           <Skill
             mediaQueries={mediaQueries}
             text="NodeJs, Express and MongoDB"
             value={80}
           />
-          <Skill mediaQueries={mediaQueries} text="React Native" value={70} />
+          <Skill mediaQueries={mediaQueries} text="React Native" value={80} />
           <Skill mediaQueries={mediaQueries} text="GraphQL" value={75} />
           <Skill mediaQueries={mediaQueries} text="GIT" value={70} />
+          <Skill mediaQueries={mediaQueries} text="Java" value={50} />
         </div>
       </div>
     </div>
