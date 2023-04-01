@@ -22,11 +22,11 @@ const useStyles = makeStyles({
   }
 });
 
-const Service = ({ icon, text, description }) => {
+const Service = ({ icon, text, description, className }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.service}>
+    <div className={`${classes.service} ${className}`}>
       <div className={classes.icon}>{icon}</div>
       <div className={classes.text}>{text}</div>
       <div className={classes.description}>{description}</div>
