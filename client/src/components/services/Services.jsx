@@ -11,20 +11,30 @@ const Creativity = ({ mediaQueries }) => {
   const styles = {
     services: {
       display: tablet ? "block" : "flex",
-      justifyContent: "space-evenly",
-    },
+      justifyContent: "space-evenly"
+    }
   };
 
   return (
     <div>
       <PageTitle title={"What I Do"} />
-      <p style={{ textAlign: "center", margin: "auto", maxWidth: 600 }}>
-        I spend a great deal of time on the planning stage to convert client's
-        ideas into sketches; work alongside experienced and dedicated designers;
-        write quality and standard codes that interprets the designs; I will be
-        happy to help manage your application.
+      <p
+        style={{ textAlign: "center", margin: "auto", maxWidth: 600 }}
+        className="wow fadeInDown"
+        data-wow-delay="0ms"
+        data-wow-duration="1000ms"
+      >
+        I spend a great deal of time on the planning stage to converting ideas
+        into sketches; work alongside experienced and dedicated designers; write
+        quality and standard codes that interprets the designs; I will be happy
+        to help manage your application as well.
       </p>
-      <div style={styles.services}>
+      <div
+        style={styles.services}
+        className="wow fadeInUp"
+        data-wow-delay="0ms"
+        data-wow-duration="1000ms"
+      >
         <Service
           icon={<SiAntdesign size={60} color="var(--primaryColor)" />}
           text="Web Design"
