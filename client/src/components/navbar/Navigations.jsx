@@ -55,19 +55,29 @@ const Navigations = ({mediaQueries: { tablet }}) => {
           marginBottom: tablet ? "initial" : 0
         }}
       >
-        <a className={classes.nav} href="#home">
+        <a className={`${classes.nav} wow fadeInDown`}
+        data-wow-delay="0ms"
+        data-wow-duration="1000ms" href="#home">
           <li>Home</li>
         </a>
-        <a className={classes.nav} href="#about">
+        <a className={`${classes.nav} wow fadeInDown`}
+        data-wow-delay="100ms"
+        data-wow-duration="1000ms" href="#about">
           <li>About</li>
         </a>
-        <a className={classes.nav} href="#services">
+        <a className={`${classes.nav} wow fadeInDown`}
+        data-wow-delay="200ms"
+        data-wow-duration="1000ms" href="#services">
           <li>Services</li>
         </a>
-        <a className={classes.nav} href="#projects">
+        <a className={`${classes.nav} wow fadeInDown`}
+        data-wow-delay="300ms"
+        data-wow-duration="1000ms" href="#projects">
           <li>Projects</li>
         </a>
-        <a className={classes.nav} href="#contact-me">
+        <a className={`${classes.nav} wow fadeInDown`}
+        data-wow-delay="400ms"
+        data-wow-duration="2000ms" href="#contact-me">
           <li>Contact Me</li>
         </a>
       </ul>
