@@ -7,7 +7,7 @@ const useStyle = makeStyles({
   },
 });
 
-const title = "Xtraaa";
+const title = "";
 
 const Logo = ({ mediaQueries: { tablet } }) => {
   const classes = useStyle();
