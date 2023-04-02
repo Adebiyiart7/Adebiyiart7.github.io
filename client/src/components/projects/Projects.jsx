@@ -1,5 +1,6 @@
 import React from "react";
 import PageTitle from "../reusable/PageTitle";
+import { mobileApp1 } from "../../assets/img/mobile-app-1.jpg"
 
 const Projects = () => {
   return (
@@ -17,7 +18,9 @@ const Projects = () => {
         Mobile Applications
       </h3>
 
-      
+      <div className="mobile-card">
+        <img src={mobileApp1 } alt="" className="display-img" />
+      </div>
       <h3
         style={{
           textAlign: "center",
