@@ -7,6 +7,7 @@ import AppButton from "./reusable/AppButton";
 import ContactMe from "./contact-me/ContactMe";
 import WavyBottom from "./reusable/WavyBottom";
 import WavyTop from "./reusable/WavyTop";
+import { Container } from "@mui/material";
 
 const AppContainer = ({ mediaQueries }) => {
   const styles = {
@@ -107,9 +108,9 @@ const AppContainer = ({ mediaQueries }) => {
 
       {/* PROJECTS */}
       <section id="projects">
-        <div style={styles.sectionStyles}>
+        <Container>
           <Projects mediaQueries={mediaQueries} />
-        </div>
+        </Container>
       </section>
 
       {/* HIRE ME */}
