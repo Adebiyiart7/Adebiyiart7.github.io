@@ -19,7 +19,7 @@ const certs = [
   { id: "5", title: "Full Stack Developer Certificate", image: FullStackCert },
 ];
 
-const Certifications = ({ mediaQueries }) => {
+const Certifications = () => {
   return (
     <div>
       <PageTitle title={"Certifications"} titleStyles={styles.titleStyles} />
