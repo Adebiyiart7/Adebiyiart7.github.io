@@ -4,6 +4,7 @@ import photo from "../../assets/img/photo.png";
 import AppButton from "../reusable/AppButton";
 import PageTitle from "../reusable/PageTitle";
 import Skill from "../Skill";
+import DownloadCV from "../DownloadCV";
 
 const useStyles = makeStyles({
   body: {
@@ -75,7 +76,7 @@ const About = ({ mediaQueries }) => {
           <br />
           <br />
           <div style={{ textAlign: tablet ? "center" : "initial" }}>
-            <AppButton text="Download CV" />
+            <DownloadCV />
           </div>
         </div>
       </div>
@@ -112,13 +113,17 @@ const About = ({ mediaQueries }) => {
         >
           <Skill
             mediaQueries={mediaQueries}
-            text="NodeJs, Express and MongoDB"
+            text="NodeJs and Express"
             value={80}
           />
           <Skill mediaQueries={mediaQueries} text="React Native" value={80} />
           <Skill mediaQueries={mediaQueries} text="GraphQL" value={75} />
           <Skill mediaQueries={mediaQueries} text="GIT" value={70} />
-          {/* <Skill mediaQueries={mediaQueries} text="Java" value={50} /> */}
+          <Skill
+            mediaQueries={mediaQueries}
+            text="Mongoose & MongoDB"
+            value={70}
+          />
         </div>
       </div>
     </div>

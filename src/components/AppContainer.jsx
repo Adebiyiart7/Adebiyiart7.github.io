@@ -3,11 +3,12 @@ import Services from "./services/Services";
 import Landing from "./landing/Landing";
 import NavBar from "./navbar/NavBar";
 import Projects from "./projects/Projects";
-import AppButton from "./reusable/AppButton";
+import DownloadCV from "../components/DownloadCV";
 import ContactMe from "./contact-me/ContactMe";
 import WavyBottom from "./reusable/WavyBottom";
 import WavyTop from "./reusable/WavyTop";
 import { Container } from "@mui/material";
+import Certifications from "./certifications/Certifications";
 
 const AppContainer = ({ mediaQueries }) => {
   const styles = {
@@ -25,6 +26,7 @@ const AppContainer = ({ mediaQueries }) => {
     hireMeText: {
       fontWeight: 500,
       fontSize: 18,
+      marginBottom: 50,
     },
   };
 
@@ -114,6 +116,22 @@ const AppContainer = ({ mediaQueries }) => {
         </Container>
       </section>
 
+      {/* CERTIFICATION */}
+      <>
+        <WavyTop />
+        <section
+          id="certifications"
+          style={{
+            backgroundColor: "var(--appBackground)",
+          }}
+        >
+          <div style={styles.sectionStyles}>
+            <Certifications mediaQueries={mediaQueries} />
+          </div>
+        </section>
+        <WavyBottom />
+      </>
+
       {/* HIRE ME */}
       <>
         <WavyTop />
@@ -126,9 +144,9 @@ const AppContainer = ({ mediaQueries }) => {
               className="wow fadeInUp"
               data-wow-delay="0ms"
               data-wow-duration="1000ms"
-              data-wow-iteration="2"
+              // data-wow-iteration="2"
             >
-              <AppButton text={"Download CV"} />
+              <DownloadCV />
             </div>
           </div>
         </section>

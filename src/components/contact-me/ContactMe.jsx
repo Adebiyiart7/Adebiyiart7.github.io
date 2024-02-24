@@ -33,7 +33,7 @@ const ContactMe = ({ mediaQueries }) => {
   const handleOnChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -47,7 +47,7 @@ const ContactMe = ({ mediaQueries }) => {
         email,
         phone_number,
         subject,
-        message
+        message,
       });
       setStatus(response);
       setShowModal(true);
@@ -59,7 +59,7 @@ const ContactMe = ({ mediaQueries }) => {
   return (
     <div
       style={{
-        margin: "auto"
+        margin: "auto",
       }}
     >
       <SuccessModal
@@ -79,21 +79,34 @@ const ContactMe = ({ mediaQueries }) => {
         {/* <header className={classes.header}>Address</header> */}
         <div style={styles.contactInfo}>
           <p>
-            <FaHome size={24} color="var(--primaryColor)" />
-            &nbsp;&nbsp;Federal University of Technology, Minna Niger State.
+            {/* <FaWhatsappSquare size={24} color="var(--primaryColor)" /> */}
+            &nbsp;&nbsp;Whatsapp: 09029242729
           </p>
           <p>
+            {/* <MdEmail size={24} color="var(--primaryColor)" /> */}
+            &nbsp;&nbsp;Email: adebiyiartworld@gmail.com
+          </p>
+          <p>
+            {/* <FaHome size={24} color="var(--primaryColor)" /> */}
+            &nbsp;&nbsp;Address: Federal University of Technology, Minna Niger
+            State.
+          </p>
+          {/* <p>
             <FaPhoneAlt size={24} color="var(--primaryColor)" />
             &nbsp;&nbsp;09029242729
-          </p>
-          <p>
-            <FaWhatsappSquare size={24} color="var(--primaryColor)" />
-            &nbsp;&nbsp;09029242729
-          </p>
-          <p>
-            <MdEmail size={24} color="var(--primaryColor)" />
-            &nbsp;&nbsp;adebiyiartworld@gmail.com
-          </p>
+          </p> */}
+        </div>
+        <div
+          style={{
+            width: "100%",
+            textAlign: "center",
+            borderTop: "1px solid #ccc",
+            paddingTop: 10,
+            margin: "100px 0 0 0",
+            fontStyle: "italic",
+          }}
+        >
+          <p>All Rights Reserved</p>
         </div>
       </div>
       {/* <form style={styles.right} onSubmit={handleSubmit}>

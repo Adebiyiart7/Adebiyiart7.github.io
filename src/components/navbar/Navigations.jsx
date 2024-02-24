@@ -91,9 +91,9 @@ const Navigations = ({ mediaQueries: { tablet } }) => {
           className={`${classes.nav} wow fadeInDown`}
           data-wow-delay="400ms"
           data-wow-duration="1000ms"
-          href="#projects"
+          href="#certifications"
         >
-          <li>Certificates</li>
+          <li>Certifications</li>
         </a>
         <a
           className={`${classes.nav} wow fadeInDown`}

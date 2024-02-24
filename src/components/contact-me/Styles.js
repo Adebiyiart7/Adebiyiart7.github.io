@@ -15,6 +15,10 @@ export const styles = (mediaQueries) => {
     },
     contactInfo: {
       color: "var(--primaryText)",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      gap: 5,
     },
     intro: {
       textAlign: "center",

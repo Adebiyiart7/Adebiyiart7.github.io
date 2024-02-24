@@ -2,12 +2,14 @@ import { makeStyles } from "@mui/styles";
 
 import photo from "../../assets/img/photo.png";
 import AppButton from "../reusable/AppButton";
+import DownloadCV from "../DownloadCV";
 
 const useStyle = makeStyles({
   actionContainer: {
     display: "block",
   },
   greeting: {
+    display: "block",
     fontSize: 20,
     fontWeight: 500,
     color: "var(--white)",
@@ -70,7 +72,8 @@ const Landing = ({ mediaQueries }) => {
             data-wow-duration="1000ms"
           >
             <h5 className={classes.greeting}>
-              Hello, meet <strong>theCodingChef</strong>.
+              <span>Hello, meet </span>
+              <strong>theCodingChef.</strong>
             </h5>
             <h1 className={classes.name} style={styles.name}>
               I am Adeeyo Joseph
@@ -83,9 +86,7 @@ const Landing = ({ mediaQueries }) => {
             data-wow-duration="1000ms"
             style={styles.actionContainer}
           >
-            <a href="/">
-              <AppButton text="Download CV" addShadow />
-            </a>
+            <DownloadCV />
           </div>
         </div>
       </div>
