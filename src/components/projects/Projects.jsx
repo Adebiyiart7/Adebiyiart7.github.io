@@ -75,7 +75,7 @@ const webProjects = [
       "Web App to discover effortless cleaning with Beta Hues – your go-to web app for connecting with top-rated professionals.",
     techStacks: ["React", "Tailwind CSS", "Redux", "TypeScript"],
     githubLink: "",
-    link: "https://betahues.netlify.app",
+    link: "https://beta-hues.vercel.app",
   },
   {
     id: "3",
