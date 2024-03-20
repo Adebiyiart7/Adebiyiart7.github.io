@@ -20,6 +20,7 @@ import musicAppAPK from "../../assets/APK/MusicApp.apk";
 import realEstateVideo from "../../assets/video/realestate.mp4";
 import musicAppVideo from "../../assets/video/musicapp.mp4";
 import ayoVideo from "../../assets/video/ayo.mp4";
+import easyShopVideo from "../../assets/video/easy-shop.mp4";
 
 const mobileProjects = [
   {
@@ -184,6 +185,13 @@ const Projects = () => {
           </Grid>
         </div>
       </div>
+      <a
+        target="_blank"
+        href={easyShopVideo}
+        // style={{ visibility: "hidden" }}
+      >
+        Video
+      </a>
     </div>
   );
 };
