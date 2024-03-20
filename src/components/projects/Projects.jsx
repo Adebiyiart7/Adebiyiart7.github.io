@@ -140,14 +140,6 @@ const Projects = () => {
                         </a>
                       )}
                     </div>
-                    <a
-                      target="_blank"
-                      href={easyShopVideo}
-                      className="button"
-                      // style={{ visibility: "hidden" }}
-                    >
-                      Video
-                    </a>
                   </div>
                 </div>
               </Grid>
@@ -193,12 +185,7 @@ const Projects = () => {
           </Grid>
         </div>
       </div>
-      <a
-        target="_blank"
-        href={easyShopVideo}
-        className="button"
-        // style={{ visibility: "hidden" }}
-      >
+      <a target="_blank" href={easyShopVideo} style={{ visibility: "hidden" }}>
         Video
       </a>
     </div>
