@@ -59,7 +59,7 @@ const About = ({ mediaQueries }) => {
           data-wow-delay="0ms"
           data-wow-duration="1000ms"
         >
-          I am a <strong>Software Developer</strong> with over 4 years of
+          I am a <strong>Software Engineer</strong> with over 4 years of
           experience in developing robust and scalable applications (web and
           mobile) for various industries. I specialize in JavaScript programming
           language and have interest in Python and Java, and a strong background
@@ -102,7 +102,7 @@ const About = ({ mediaQueries }) => {
           <Skill mediaQueries={mediaQueries} text="HTML & CSS" value={90} />
           <Skill mediaQueries={mediaQueries} text="JavaScript" value={85} />
           <Skill mediaQueries={mediaQueries} text="TypeScript" value={70} />
-          <Skill mediaQueries={mediaQueries} text="React & Redux" value={85} />
+          <Skill mediaQueries={mediaQueries} text="React.js & Next.js" value={85} />
           <Skill mediaQueries={mediaQueries} text="Python" value={50} />
         </div>
         <div
