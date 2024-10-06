@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles";
+rimport { makeStyles } from "@mui/styles";
 
 import photo from "../../assets/img/photo.png";
 import AppButton from "../reusable/AppButton";
@@ -78,7 +78,7 @@ const Landing = ({ mediaQueries }) => {
             <h1 className={classes.name} style={styles.name}>
               I am Adeeyo Joseph
             </h1>
-            <p className={classes.title}>Software Developer</p>
+            <p className={classes.title}>Software Engineer</p>
           </div>
           <div
             className={`${classes.actionContainer} wow fadeInUp`}
