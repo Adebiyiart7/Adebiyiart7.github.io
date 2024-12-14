@@ -1,6 +1,6 @@
 import React from "react";
 import AppButton from "./reusable/AppButton";
-import cv from "../assets/pdf/cv.pdf";
+import cv from "../assets/pdf/_ADEEYO_JOSEPH_ADEBIYI_RESUME_.pdf";
 
 const DownloadCV = () => {
   return (

@@ -1,7 +1,6 @@
-rimport { makeStyles } from "@mui/styles";
+import { makeStyles } from "@mui/styles";
 
 import photo from "../../assets/img/photo.png";
-import AppButton from "../reusable/AppButton";
 import DownloadCV from "../DownloadCV";
 
 const useStyle = makeStyles({
