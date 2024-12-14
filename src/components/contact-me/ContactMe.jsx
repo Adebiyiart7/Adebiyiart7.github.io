@@ -88,8 +88,7 @@ const ContactMe = ({ mediaQueries }) => {
           </p>
           <p>
             {/* <FaHome size={24} color="var(--primaryColor)" /> */}
-            &nbsp;&nbsp;Address: Federal University of Technology, Minna Niger
-            State.
+            &nbsp;&nbsp;Address: Abuja, Nigeria.
           </p>
           {/* <p>
             <FaPhoneAlt size={24} color="var(--primaryColor)" />

@@ -6,6 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { MdPlayCircle } from "react-icons/md";
 import PageTitle from "../reusable/PageTitle";
 import musicApp from "../../assets/img/music-app.png";
+import spotipApp from "../../assets/img/spotip.png";
 import realEstateApp from "../../assets/img/real-estate-app.png";
 import therapyApp from "../../assets/img/therapy-app.png";
 import gameHubApp from "../../assets/img/game-hub.png";
@@ -13,10 +14,12 @@ import betaHuesApp from "../../assets/img/beta-hues.png";
 import xtraaaHubApp from "../../assets/img/xtraaa-hub.png";
 
 // APKs
+import spotipAPK from "../../assets/APK/spotip.apk";
 import realEstateAPK from "../../assets/APK/RealEstate.apk";
 import ayoAPK from "../../assets/APK/Ayo.apk";
 import musicAppAPK from "../../assets/APK/MusicApp.apk";
 // Video
+import spotipVideo from "../../assets/video/spotip.mp4";
 import realEstateVideo from "../../assets/video/realestate.mp4";
 import musicAppVideo from "../../assets/video/musicapp.mp4";
 import ayoVideo from "../../assets/video/ayo.mp4";
@@ -25,6 +28,17 @@ import easyShopVideo from "../../assets/video/easy-shop.mp4";
 const mobileProjects = [
   {
     id: "1",
+    image: spotipApp,
+    title: "Spotip",
+    description:
+      "AI and User Sports Predictions with Statistics built with React Native.",
+    techStacks: ["React Native", "Zustand", "TypeScript", "Expo/eas"],
+    githubLink: "",
+    apkLink: spotipAPK,
+    videoLink: spotipVideo,
+  },
+  {
+    id: "2",
     image: realEstateApp,
     title: "Real Estate Application",
     description: "React Native Real Estate app for seamless property search.",
@@ -34,7 +48,7 @@ const mobileProjects = [
     videoLink: realEstateVideo,
   },
   {
-    id: "2",
+    id: "3",
     image: therapyApp,
     title: "Therapy Application",
     description:
@@ -45,7 +59,7 @@ const mobileProjects = [
     videoLink: ayoVideo,
   },
   {
-    id: "3",
+    id: "4",
     image: musicApp,
     title: "Music Application",
     description:
