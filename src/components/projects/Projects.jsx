@@ -54,7 +54,7 @@ const mobileProjects = [
     image: therapyApp,
     title: "Therapy Application",
     description:
-      "React Native therapy app for accessible mental health support.",
+      "React Native therapy app for accessible mental health support",
     techStacks: ["React Native", "TypeScript"],
     githubLink: "",
     apkLink: ayoAPK,
