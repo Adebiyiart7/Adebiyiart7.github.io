@@ -34,8 +34,7 @@ const mobileProjects = [
       "AI and User Sports Predictions with Statistics built with React Native.",
     techStacks: ["React Native", "Zustand", "TypeScript", "Expo/eas"],
     githubLink: "",
-    android:
-      "https://play.google.com/store/apps/details?id=com.spot_tech.spotlive",
+    android: "https://spotip-apks.s3.eu-north-1.amazonaws.com/spotip.apk",
     ios: "https://apps.apple.com/us/app/spotip-livescores-ai-tips/id6739162688",
     videoLink: spotipVideo,
   },
