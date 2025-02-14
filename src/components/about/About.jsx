@@ -1,3 +1,4 @@
+import React from "react";
 import { makeStyles } from "@mui/styles";
 
 import photo from "../../assets/img/photo.png";

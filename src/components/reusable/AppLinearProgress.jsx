@@ -1,3 +1,4 @@
+import React from "react";
 export default function AppLinearProgress({thickness=6, value=100}) {
   const styles = {
     inner: {

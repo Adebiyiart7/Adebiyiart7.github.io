@@ -1,3 +1,4 @@
+import React from "react";
 import { Modal } from "@mui/material";
 import LottieView from "lottie-react";
 

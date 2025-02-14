@@ -2,7 +2,11 @@ import React from "react";
 
 const WavyBottom = ({ color = "var(--appBackground)", style }) => {
   return (
-    <svg style={style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg
+      style={style}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
       <path
         fill={color}
         fillOpacity="1"
