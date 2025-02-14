@@ -4,8 +4,8 @@ import cv from "../assets/pdf/_ADEEYO_JOSEPH_ADEBIYI_RESUME.pdf";
 
 const DownloadCV = () => {
   return (
-    <a href={cv} download>
-      <AppButton text="Download CV" />
+    <a href={cv} target="_blank">
+      <AppButton text="Download Resume" />
     </a>
   );
 };
